@@ -5,4 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:BarcodeGenerator.WPF"
     StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+        <Style x:Key="EAN13">
+            <Setter Property="TextElement.FontFamily" Value="Fonts/#EAN-13"/>
+        </Style>
+    </Application.Resources>
 </views:MvxApplication>
