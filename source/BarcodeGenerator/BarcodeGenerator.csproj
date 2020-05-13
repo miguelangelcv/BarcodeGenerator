@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Miguel Angel Cantero</Authors>
+    <Company>miguelangelcv</Company>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MvvmCross" Version="6.4.2" />
+    <PackageReference Include="TextCopy" Version="3.3.0" />
   </ItemGroup>
 
 </Project>

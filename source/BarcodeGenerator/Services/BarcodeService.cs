@@ -137,7 +137,7 @@ namespace BarcodeGenerator.Services
         public string GenerateNewBarcode(int code)
         {
             string barcode = NEW_BARCODE_PREFIX;
-            barcode += string.Format("{0:D2}", code);
+            barcode += string.Format("{0:D5}", code);
             barcode += CalcCheckDigit(barcode);
 
             return GenerateBarcode(barcode);
@@ -154,7 +154,7 @@ namespace BarcodeGenerator.Services
             barcode += GetLeftHandA(code[4]);  // Pos 5
             barcode += GetLeftHandA(code[5]);  // Pos 6
             barcode += GetLeftHandB(code[6]);  // Pos 7
-            barcode += CENTER_GUARD; // Center
+            barcode += CENTER_GUARD;           // Center
             barcode += GetRightHand(code[7]);  // Pos 8
             barcode += GetRightHand(code[8]);  // Pos 9
             barcode += GetRightHand(code[9]);  // Pos 10

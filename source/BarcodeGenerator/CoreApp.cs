@@ -1,4 +1,6 @@
-﻿using BarcodeGenerator.ViewModels;
+﻿using BarcodeGenerator.Services;
+using BarcodeGenerator.ViewModels;
+using MvvmCross;
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 
@@ -12,7 +14,15 @@ namespace BarcodeGenerator
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
+
+            RegisterServices();
             RegisterAppStart<HomeViewModel>();
+        }
+
+        private void RegisterServices()
+        {
+            Mvx.IoCProvider.RegisterSingleton(new BarcodeService());
+            Mvx.IoCProvider.RegisterSingleton(new ClipboardService());
         }
     }
 }

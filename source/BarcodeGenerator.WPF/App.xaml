@@ -10,5 +10,8 @@
         <Style x:Key="EAN13">
             <Setter Property="TextElement.FontFamily" Value="Fonts/#EAN-13"/>
         </Style>
+        <Style x:Key="MaterialIcons">
+            <Setter Property="TextElement.FontFamily" Value="Fonts/#Material Design Icons"/>
+        </Style>
     </Application.Resources>
 </views:MvxApplication>

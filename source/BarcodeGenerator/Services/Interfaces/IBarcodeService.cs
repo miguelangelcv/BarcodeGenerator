@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BarcodeGenerator.Services
+﻿namespace BarcodeGenerator.Services
 {
     public interface IBarcodeService
     {

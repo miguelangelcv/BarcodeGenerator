@@ -4,19 +4,27 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>BarcodeIcon.ico</ApplicationIcon>
+    <AssemblyName>BarcodeGenerator.WPF</AssemblyName>
+    <Authors>Miguel Angel Cantero</Authors>
+    <Company>miguelangelcv</Company>
+    <NeutralLanguage>es-ES</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Fonts\EAN-13.TTF" />
+    <None Remove="Fonts\materialdesignicons-webfont.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Fonts\EAN-13.TTF" />
+    <Resource Include="Fonts\materialdesignicons-webfont.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MvvmCross" Version="6.4.2" />
     <PackageReference Include="MvvmCross.Platforms.Wpf" Version="6.4.2" />
+    <PackageReference Include="TextCopy" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>

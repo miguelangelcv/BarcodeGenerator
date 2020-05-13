@@ -8,5 +8,6 @@
     xmlns:views="clr-namespace:MvvmCross.Platforms.Wpf.Views;assembly=MvvmCross.Platforms.Wpf"
     mc:Ignorable="d"
     Title="Generador de Códigos de Barras"
-    MinHeight="600" MinWidth="800">
+    Height="600" Width="400"
+    MinHeight="600" MinWidth="400">
 </views:MvxWindow>
