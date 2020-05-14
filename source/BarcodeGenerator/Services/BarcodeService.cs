@@ -150,10 +150,10 @@ namespace BarcodeGenerator.Services
             barcode += GetFirstFlag(code[0]);  // Pos 1
             barcode += GetSecondFlag(code[1]); // Pos 2
             barcode += GetLeftHandB(code[2]);  // Pos 3
-            barcode += GetLeftHandB(code[3]);  // Pos 4
-            barcode += GetLeftHandA(code[4]);  // Pos 5
-            barcode += GetLeftHandA(code[5]);  // Pos 6
-            barcode += GetLeftHandB(code[6]);  // Pos 7
+            barcode += GetLeftHandA(code[3]);  // Pos 4
+            barcode += GetLeftHandB(code[4]);  // Pos 5
+            barcode += GetLeftHandB(code[5]);  // Pos 6
+            barcode += GetLeftHandA(code[6]);  // Pos 7
             barcode += CENTER_GUARD;           // Center
             barcode += GetRightHand(code[7]);  // Pos 8
             barcode += GetRightHand(code[8]);  // Pos 9
